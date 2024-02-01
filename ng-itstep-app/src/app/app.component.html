@@ -1,48 +1,6 @@
 <div class="container">
-    <h1>{{ title }}</h1>
-    <div class="contents">
+    <h1>My Cars APP</h1>
+  
+    <app-cars></app-cars>
  
-        <button
-        class="btn"
-        [ngClass]="{
-           hide: isVisible,
-           show: !isVisible 
-        }" 
-        (click)="toggleVisible()"
-        > 
-        {{ btnText }}
-       </button>
-
-         <div *ngIf="isVisible else notVisible" class="is-visible">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptatum.
-        </div>
-
-        <ng-template #notVisible>
-            <div class="is-hidden">
-                Lorem ipsum dolor sit, amet consectetur 
-                adipisicing elit. Optio et deleniti, animi reiciendis corrupti facere quod in sapiente aut quis!
-            </div>
-        </ng-template>
-       
-
-       <ul class="users">
-          <ng-container *ngFor="let user of users">
-            <li *ngIf="user.isActive else notIsActive" class="item">
-                <span>{{user.id}}</span>
-                <span>{{user.name}}</span>
-                <span>{{user.role}}</span>
-             </li>
-         
-          <ng-template #notIsActive>
-            <li class="item">
-                <span>{{user.id}}</span>
-                <span>inactive</span>
-            </li>
-          </ng-template>
-
-        </ng-container>
-        
-       </ul>
-
-    </div>
 </div>
