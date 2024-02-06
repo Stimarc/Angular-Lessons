@@ -1,0 +1,48 @@
+.car {
+  width: 300px;
+  border: 2px solid silver;
+}
+
+.header {
+  padding: 20px;
+  background: silver;
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.inner-content {
+  width: 100%;
+  height: 200px;
+}
+
+.inner-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.color-select {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}

@@ -1,0 +1,20 @@
+.item {
+    border: 1px solid silver;
+    margin: 3px;
+    padding: 10px;
+}
+.item span {
+    margin-right: 5px;
+}
+
+.is-visible {
+    padding: 20px;
+    border: 3px solid teal;
+    margin: 10px;
+}
+
+.is-hidden {
+    padding: 20px;
+    border: 3px solid tomato;
+    margin: 10px;
+}

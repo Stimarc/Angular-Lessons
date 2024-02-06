@@ -1,0 +1,15 @@
+<div class="car">
+  <div class="header">
+    <div class="header-item name">{{ car.name }}</div>
+    <div class="header-item model">{{ car.model }}</div>
+    <div class="header-item year">{{ car.year }}</div>
+  </div>
+  <div class="inner-content">
+    <img src="./assets/img/{{ car.colors[0].img ? car.colors[0].img : 'no-image.png' }}" alt="car-photo">
+  </div>
+  <ul class="color-select">
+    <li class="color red"></li>
+    <li class="color green"></li>
+    <li class="color blue"></li>
+  </ul>
+</div>

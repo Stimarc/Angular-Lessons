@@ -1,0 +1,22 @@
+<div class="cars">
+  <h3 class="title">Cars</h3>
+
+  <div class="content">
+    
+    <ng-container *ngFor="let car of cars">
+
+      <app-car 
+        *ngIf="car.isActive else inactive" 
+        class="car-wrap" 
+        [carItem]="car"
+      >
+      </app-car>
+      <ng-template #inactive>
+        <app-car class="car-wrap inactive" [carItem]="car"></app-car>
+      </ng-template>
+
+    </ng-container>
+
+  </div>
+
+</div>
