@@ -5,11 +5,14 @@
     <div class="header-item year">{{ car.year }}</div>
   </div>
   <div class="inner-content">
-    <img src="./assets/img/{{ car.colors[0].img ? car.colors[0].img : 'no-image.png' }}" alt="car-photo">
+    <img src="./assets/img/{{ currentColor.img ? currentColor.img : 'no-image.png' }}" alt="car-photo">
   </div>
+
   <ul class="color-select">
-    <li class="color red"></li>
-    <li class="color green"></li>
-    <li class="color blue"></li>
+    <li *ngFor="let color of car.colors" 
+        class="color {{color.color}}"
+        [ngClass]="{active: color === currentColor}"
+        (click)="changeColor(color)">
+    </li>
   </ul>
 </div>

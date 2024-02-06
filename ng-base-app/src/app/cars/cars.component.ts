@@ -17,6 +17,10 @@ export class CarsComponent {
       year: 2015,
       colors: [
         { color: 'red', img: 'bmw-red.jpg' },
+        { color: 'blue', img: 'bmw-blue.jpg' },
+        { color: 'black', img: 'bmw-black.jpg' },
+        { color: 'silver', img: 'bmw-silver.jpg' },
+        
       ],
       isActive: true,
     },
@@ -27,6 +31,9 @@ export class CarsComponent {
       year: 2017,
       colors: [
         { color: 'blue', img: 'ford-blue.jpg' },
+        { color: 'green', img: 'ford-green.webp' },
+        { color: 'red', img: 'ford-red.png' },
+        { color: 'white', img: 'ford-white.png' },
       ],
       isActive: true,
     },
@@ -36,10 +43,18 @@ export class CarsComponent {
       model: 'A6',
       year: 2020,
       colors: [
-        { color: 'red', img: '' },
+        { color: 'red', img: 'audi-red.jpg' },
+        { color: 'blue', img: 'audi-blue.webp' },
+        { color: 'green', img: 'audi-green.webp' },
+        { color: 'black', img: 'no-image.png' },
       ],
       isActive: false,
     }
 
   ];
+
+  updateCarList(car: CarType) {
+    this.cars.push(car)
+  }
+
 }

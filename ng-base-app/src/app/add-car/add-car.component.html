@@ -1,0 +1,13 @@
+<div class="add-car">
+    <input [(ngModel)]="carName" type="text" placeholder="name">
+    <input [(ngModel)]="carModel" type="text" placeholder="model">
+    <input [(ngModel)]="carYear" type="text" placeholder="year">
+    <div class="add-car-btn">
+        <button 
+        (click)="addCar()"
+        class="add-car-btn"
+        >
+          add car
+    </button>
+    </div>
+</div>
